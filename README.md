@@ -40,13 +40,25 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+ Middleware: Middleware functions can get the request and response objects, operate on them, and (when specified) trigger some action.
+ Server side routing: Routing is a way to select which request handler function is executed based on the URL visited and the HTTP method used as a way to break an application into smaller parts.
+
 - [ ] Describe Middleware?
+
+Middleware is a function that can get the request and response params as well as next and error, and then triggers some actions. It serves to "glue together" separate, often complex and already existing, programs.
+
 
 - [ ] Describe a Resource?
 
+Resources are data points inside the REST API. Users are resources. Orders that the users create are resources. 
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+It could return a server starting message or status 200
+
 - [ ] How can we partition our application into sub-applications?
+
+We can divide up components by creating separate routes that aim at each section of the main application.
 
 ## Minimum Viable Product
 
