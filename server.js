@@ -5,11 +5,11 @@ const projectRouter = require("./routers/projectRouter");
 const server = express();
 
 server.use(express.json());
-// server.use("/api/actions", actionRouter);
+server.use("/api/actions", actionRouter);
 // server.use("/api/projects", projectRouter);
 
 server.get("/", (req, res) => {
-  res.send(`<h1>Node API Sprint</h1>`);
+  res.send(`<h1>Node API Sprint - Ian Fragoso</h1>`);
 });
 
 module.exports = server;
